@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #363636;
+    padding: 26px 0 32px;
+    text-align: center;
+}
+
+.menu ul {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+    row-gap: 20px;
+}
+
+.menu ul li {
+    /*display: inline-block;*/
+    /*margin: 0 25.5px;*/
+    /*vertical-align: middle;*/
+    list-style: none;
+}
+
+.menu ul li a {
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    /*line-height: 4.333;*/
+    text-decoration: none;
+}
+
+.main {
+    padding: 102px 0 145px;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/*.main .container {*/
+/*    font-size: 0;*/
+/*}*/
+
+.main-container {
+    /*font-size: 0;*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-info {
+    /*display: inline-block;*/
+    /*margin-right: 190px;*/
+    max-width: 524px;
+    /*vertical-align: middle;*/
+}
+
+.main-image {
+    max-width: 40%;
+    /*display: inline-block;*/
+    /*vertical-align: middle;*/
+}
+
+.main-image img {
+    width: 100%;
+}
+
+.main h1 {
+    color: rgb(54, 54, 54);
+    font-size: 45px;
+    font-weight: bold;
+    line-height: 1.222;
+    margin-bottom: 50px;
+}
+
+.main-text {
+    color: rgb(57, 39, 3);
+    font-size: 17px;
+    line-height: 1.471;
+    margin-bottom: 97px;
+    max-width: 420px;
+}
+
+.button {
+    background-color: #aaccdc;
+    border: 0;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: bold;
+    /*line-height: 1.471;*/
+    padding: 22px;
+    text-align: center;
+    width: 232px;
+    box-sizing: border-box;
+}
+
+.button:hover {
+    text-decoration: underline;
+}
+
+.about {
+    background-color: #b99d7f;
+    padding: 130px 0 143px;
+}
+
+.about h2 {
+    color: rgb(255, 255, 255);
+    font-size: 45px;
+    font-weight: bold;
+    line-height: 1.222;
+    margin-bottom: 36px;
+    text-align: center;
+}
+
+.about-items {
+    /*font-size: 0;*/
+    /*margin-left: -47px;*/
+    /*margin-right: -47px;*/
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.about-item {
+    /*display: inline-block;*/
+    /*font-size: 0;*/
+    /*margin: 27px 47px;*/
+    /*max-width: 338px;*/
+    /*margin: 0 auto;*/
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.about-item-image {
+    /*display: inline-block;*/
+    height: 100px;
+    /*text-align: center;*/
+    /*vertical-align: middle;*/
+    width: 100px;
+}
+
+.about-item-text {
+    color: rgb(255, 255, 255);
+    /*display: inline-block;*/
+    font-size: 17px;
+    line-height: 1.471;
+    margin-left: 15px;
+    /*vertical-align: middle;*/
+    max-width: 220px;
+}
+
+.footer {
+    color: rgb(255, 255, 255);
+    background-color: #363636;
+    font-size: 18px;
+    padding: 30px 0 33px;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer .logo {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.footer-time {
+    display: inline-block;
+    /*margin-left: 296px;*/
+    vertical-align: middle;
+}
+
+.footer-phones {
+    display: inline-block;
+    /*margin-left: 289px;*/
+    vertical-align: middle;
+}
+
+@media  screen and (max-width: 767px) {
+    .main-container {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .main-text {
+        margin: 0 auto;
+    }
+
+    .main-image {
+        max-width: 100%;
+        margin-bottom: 60px;
+    }
+
+    .button {
+        margin-top: 20px;
+        padding: 15px;
+    }
+
+    .about .container h2 {
+        font-size: 30px;
+    }
+
+    .about-items {
+        grid-template-columns: 1fr;
+    }
+
+    .footer .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-time {
+        margin: 10px 0;
+    }
+}
+
+@media  screen and (max-width: 499px) {
+    .menu ul {
+        grid-template-columns: 1fr;
+    }
+    .menu .menu-image {
+        grid-row: 1/2;
+        grid-column: 1/2;
+    }
+
+    .main .main-container .main-info h1 {
+        font-size: 30px;
+    }
+}
+
+@media  screen and (max-width: 424px) {
+
+}
